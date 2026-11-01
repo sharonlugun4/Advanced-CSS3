@@ -1,0 +1,258 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f0ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header - Multiple Backgrounds */
+header {
+    text-align: center;
+    padding: 35px 15px;
+    color: white;
+
+    background-image:
+        radial-gradient(circle at top left, #d9b8ff, transparent 45%),
+        linear-gradient(120deg, #594080, #9674c7);
+
+    background-size: cover, cover;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+/* Pseudo-class: Hover */
+nav a:hover {
+    color: #ffd98e;
+}
+
+/* Sections */
+section {
+    padding: 35px 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: #65458d;
+    margin-bottom: 25px;
+}
+
+/* Rounded Corners */
+.profile-card {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 20px;
+    max-width: 750px;
+    margin: auto;
+    box-shadow: 0 4px 12px #ccc;
+}
+
+.avatar {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+/* Border Image */
+.profile-card {
+    border: 5px solid;
+    border-image: linear-gradient(45deg, #65458d, #e99a3b) 1;
+}
+
+/* Education Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+/* nth-child() */
+tr:nth-child(odd) {
+    background-color: #eee5fa;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:hover {
+    background-color: #d8c5f0;
+}
+
+/* Skills */
+.skill-container {
+    text-align: center;
+}
+
+.skill {
+    display: inline-block;
+    background-color: #7656a2;
+    color: white;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #e99a3b;
+    transform: scale(1.1);
+}
+
+/* Projects - Background Size */
+#projects {
+    background-image:
+        linear-gradient(rgba(245, 240, 255, 0.92),
+                        rgba(245, 240, 255, 0.92)),
+        linear-gradient(120deg, #c5a8e8, #f2d4a6);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card {
+    background-color: white;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 750px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.project-name {
+    color: #65458d;
+    cursor: pointer;
+}
+
+/* Adjacent Sibling Selector */
+.project-name:hover + .project-details {
+    display: block;
+    color: #8b5bb5;
+}
+
+.project-details {
+    display: none;
+    margin-top: 10px;
+}
+
+/* Certifications */
+#certifications ul {
+    max-width: 600px;
+    margin: auto;
+    padding-left: 30px;
+}
+
+#certifications li {
+    margin: 10px;
+}
+
+/* Contact Form */
+form {
+    max-width: 500px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+}
+
+/* Pseudo-classes */
+input:focus, textarea:focus {
+    outline: 2px solid #9674c7;
+}
+
+input:required, textarea:required {
+    background-color: #faf7ff;
+}
+
+input:valid {
+    border: 2px solid green;
+}
+
+input:invalid {
+    border: 2px solid #cc7777;
+}
+
+button {
+    background-color: #7656a2;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #503575;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #594080;
+    color: white;
+    padding: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    section {
+        padding: 25px 5%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
